@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="welcomeMessage">Welcome! Please log in.</h2>
+    
+    <div id="loginForm">
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <button id="logoutButton" onclick="logout()" style="display:none;">Logout</button>
+
+
+    <nav class="flex justify-center items-center gap-4 md:place-self-center md:justify-self-end">
+        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/fb-thumb.png" alt="Facebook">
+        </a>
+        <a href="https://www.youtube.com/yourchannel" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/youtube-thumb.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/instagram-thumb.png" alt="Instagram">
+        </a>
+    </nav>
+
+    
+    
+    <script src="test.js"></script>
+</body>
+</html>
