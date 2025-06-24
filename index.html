@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .active{
+        color: white;
+        background-color: rgba(24, 4, 209, 0.781);
+      }
+    </style>
 </head>
 <body>
     <!-- header section started-->
@@ -20,9 +26,17 @@
                     <h1 class="text-xl font-bold">জানালা</h1>
                 </div>
                 <div class="flex justify-between items-center gap-2">
+                  <a href="#faq-section">
                     <button id="faq-btn" class="btn btn-outline text-blue-800  hover:bg-blue-800  hover:text-white"><img src="./assets/fa-circle-question.png" alt="">FAQ</button>
+                  </a>
+                  <a href="#learn-section">
                     <button id="learn-btn" class="btn btn-outline text-blue-800  hover:bg-blue-800  hover:text-white"><img src="./assets/fa-book-open.png" alt="">Learn</button>
+
+                  </a>
+                  <a href="">
                     <button class="btn btn-outline text-blue-800  hover:bg-blue-800  hover:text-white"><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</button>
+
+                  </a>
                 </div>
             </div>
         </nav>
@@ -53,24 +67,22 @@
             <div class="text-center mb-8">
                 <h1 class="text-3xl font-bold mb-6"><span class="text-blue-400">Let's</span> Learn Vocabularies</h1>
                 <div id="category-container" class="flex justify-center items-center gap-2">
-                  <!-- <div>
-                    <button class="btn btn-outline text-blue-800"><img src="./assets/fa-book-open.png" alt="">Lesson - 1</button>
-                  </div> -->
+                  
                 </div>
             </div>
-            <!-- <div class="bg-gray-100 text-center space-y-3 py-14 w-10/12 mx-auto rounded-3xl">
-                <p class="text-gray-700 text-sm">আপনি এখনো কোন Lesson Select করেন ন</p>
-                <h1 class="text-2xl font-semibold">একটি Lesson Select করুন।</h1>
-            </div> -->
-        </div>
+          </div>
     </section>
     <!-- learn section ended -->
     
     <!-- lesson - 2 section started -->
     <section >
   <div class="w-10/12 mx-auto bg-gray-100 rounded-3xl mb-20">
-      <div id="card-container" class="grid grid-cols-3 gap-5 p-6">
-          
+
+      <div id="card-container" class="grid grid-cols-3 gap-6 p-6">
+        <div class="bg-gray-100 text-center space-y-3 pt-12 rounded-3xl mx-auto col-span-3">
+          <p class="text-gray-700 text-sm">আপনি এখনো কোন Lesson Select করেন ন</p>
+          <h1 class="text-2xl font-semibold pb-10">একটি Lesson Select করুন।</h1>
+      </div>
       </div>
   </div>
     </section>
@@ -144,6 +156,23 @@
         </div>
     </section>
     <!-- footer section ended -->
+
+    <!-- modal -->
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="modal_details" class="modal">
+  <div class="modal-box">
+    <div id="details-container">
+
+    </div>
+    <div class="modal-action items-start text-start justify-start">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn btn-primary ">Complete Learning</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     <script src="script.js"></script>
 </body>
