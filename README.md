@@ -32,6 +32,29 @@ A web application for learning English vocabulary interactively, built with HTML
 
 ---
 
+## 📦 Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/SaudaTusSahadia/assignment6.git
+   cd assignment6
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Set up environment variables:**
+   - Copy `.env.example` to `.env.local` and fill in your Firebase and backend API credentials.
+
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+---
+
 © 2025 English জানালা. All rights
 
 
